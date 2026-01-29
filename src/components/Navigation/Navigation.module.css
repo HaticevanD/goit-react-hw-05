@@ -1,14 +1,13 @@
 .nav {
   width: 100%;
-  position: fixed; /* ← fixed en güvenilir yöntem */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999; /* diğer her şeyin üstünde */
   background: linear-gradient(135deg, #6b48ff 0%, #a78bfa 50%, #7c3aed 100%);
   padding: 1rem 0;
   box-shadow: 0 4px 20px rgba(107, 72, 255, 0.35);
-  margin: 0;
+  padding: 20px;
 }
 
 .list {

@@ -1,15 +1,13 @@
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  color: #1e1b4b;
-  text-align: center;
 }
 
 .backButton {
   display: inline-block;
-  margin-bottom: 2rem;
-  padding: 0.7rem 1.4rem;
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 1.2rem;
   background: linear-gradient(135deg, #7c3aed, #a78bfa);
   color: white;
   text-decoration: none;
@@ -24,23 +22,34 @@
   box-shadow: 0 8px 20px rgba(124, 58, 237, 0.5);
 }
 
-.movieWrapper {
+/* Tatlı kart – poster + bilgiler birlikte */
+.card {
+  background: linear-gradient(145deg, #fffaf0 0%, #fdf4e9 50%, #f9f1ff 100%);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.25);
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.35);
+}
+
+.cardContent {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 2.5rem;
-  margin-bottom: 2.5rem;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 @media (max-width: 992px) {
-  .movieWrapper {
+  .cardContent {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
-}
-
-.posterContainer {
-  flex-shrink: 0;
 }
 
 .poster {
@@ -48,25 +57,19 @@
   max-width: 100%;
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   object-fit: cover;
+  flex-shrink: 0;
 }
 
-.detailsContainer {
+.details {
   flex: 1;
-  max-width: 600px;
-  text-align: left;
-}
-
-@media (max-width: 992px) {
-  .detailsContainer {
-    text-align: center;
-  }
+  min-width: 300px;
 }
 
 .title {
   margin: 0 0 1.2rem;
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 700;
   color: #4c1d95;
 }
