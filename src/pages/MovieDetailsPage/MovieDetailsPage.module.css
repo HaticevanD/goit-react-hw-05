@@ -1,0 +1,135 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: #1e1b4b;
+  text-align: center;
+}
+
+.backButton {
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 0.7rem 1.4rem;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+.backButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.5);
+}
+
+.movieWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 992px) {
+  .movieWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.posterContainer {
+  flex-shrink: 0;
+}
+
+.poster {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+.detailsContainer {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  .detailsContainer {
+    text-align: center;
+  }
+}
+
+.title {
+  margin: 0 0 1.2rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #4c1d95;
+}
+
+.overview {
+  line-height: 1.7;
+  margin: 0 0 1.8rem;
+  font-size: 1.15rem;
+  color: #334155;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  font-size: 1.1rem;
+}
+
+.metaItem {
+  margin: 0;
+}
+
+.metaItem strong {
+  color: #7c3aed;
+}
+
+.subNav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2.5rem 0 2rem;
+}
+
+.subLink {
+  padding: 0.9rem 2.2rem;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+.subLink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.5);
+}
+
+.outletWrapper {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.loading,
+.error,
+.notFound {
+  text-align: center;
+  padding: 8rem 1rem;
+  font-size: 1.8rem;
+  color: #7c3aed;
+}
